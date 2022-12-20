@@ -1,0 +1,42 @@
+{% extends "network/layout.html" %}
+
+{% load static %}
+
+{% block body %}
+
+<div id="newPostDiv" style="border-style:solid; border-width: 2px; border-color:grey">
+    <div class="form-group" style="padding-top:20px; padding-left:20px;">
+        <h4>New Post</h4>
+        <form id="newPostForm">
+            <textarea class="form-control" placeholder="New Post..." id="post-body"></textarea>
+            <input type="submit" value="Post" class="btn btn-primary"/>
+        </form>
+    </div>
+    </form>
+</div>
+
+<div id="Profile-view">
+    <!--<h3 style="text-align:center" id="username"></h3>
+    <p style="text-align:center"><span id="followingCount"><b>Following : </b></span id="followersCount"><span><b style="padding-left: 20px">Followers : </b></span></p>
+    <p style="text-align:center"><button id="followButton" class="btn btn-primary">Follow</button></p>-->
+</div>
+
+<div id="Profile-posts">
+    
+</div>
+
+<div id="Posts-view">
+    
+</div>
+
+<div id="following-Posts">
+    
+</div>
+
+
+
+{% endblock %}
+
+{% block script %} 
+    <script src="{% static 'network/index.js' %}"></script>
+{% endblock %}
